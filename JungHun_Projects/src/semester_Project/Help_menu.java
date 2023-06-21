@@ -38,7 +38,7 @@ public class Help_menu extends JFrame {
 	 */
 	public Help_menu() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 700, 430);
+		setBounds(100, 100, 715, 437);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

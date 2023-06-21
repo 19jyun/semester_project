@@ -1,7 +1,5 @@
 package semester_Project;
 
-import hs_Kiosk_JungHun.Food;
-import hs_Kiosk_JungHun.Hs_kiosk_food;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -47,7 +45,7 @@ public class Main_menu extends JFrame {
 	 */
 	public Main_menu() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 700, 422);
+		setBounds(100, 100, 715, 437);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

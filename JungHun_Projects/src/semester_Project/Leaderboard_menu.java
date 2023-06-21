@@ -45,7 +45,7 @@ public class Leaderboard_menu extends JFrame {
 	 */
 	public Leaderboard_menu() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 701, 417);
+		setBounds(100, 100, 715, 430);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

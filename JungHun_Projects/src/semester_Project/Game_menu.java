@@ -1,49 +1,40 @@
 package semester_Project;
 
-import hs_Kiosk_JungHun.Food;
-import hs_Kiosk_JungHun.Hs_kiosk_Main;
-
-import java.awt.BorderLayout;
-import javax.swing.ImageIcon;
+import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import java.awt.Color;
-import javax.swing.JTable;
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
-
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.awt.Font;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-
 import javax.swing.SwingConstants;
+import javax.swing.border.EmptyBorder;
 
 public class Game_menu extends JFrame implements ActionListener {
 
-	private JButton[][] coordinates = new JButton[9][9];
+	private JButton[][] coordinates = new JButton[9][9];//1to1 button layout for user interaction
 	private int x = 0;//player 1 starts off
-	private int [][] checked = new int[9][9];
+	private int [][] checked = new int[9][9];//actual 2d array used to track where the player played
 	private JLabel lblPlayer;
 	private int row = 0;
 	private int column = 0;
 	private JPanel contentPane;
 	private GridLayout bt;
 	private JPanel panel = new JPanel();
-	private JLabel lblArithmeticEquation;
+	private JLabel lblArithmeticEquation;//where math equations are displayed
 	private JLabel lblPlayer_1;
 	private JLabel lblPlayer_2;
 	private Timer timer1 = new Timer();
@@ -58,7 +49,7 @@ public class Game_menu extends JFrame implements ActionListener {
 	int finalnum;
 	public static int num3=-1;//for + and - or *
 
-	public static int timesaver=0;//so that if the game finishes, time is resetted to what it originally was
+	public static int timesaver=0;//so that if the game finishes, time is set to what it originally was
 	private int p1time = timesaver;//seconds given for player 1
 	private int p2time = timesaver;
 
@@ -88,7 +79,7 @@ public class Game_menu extends JFrame implements ActionListener {
 	 */
 	public Game_menu() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 701, 420);
+		setBounds(100, 100, 715, 437);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

@@ -48,14 +48,14 @@ public class Settings_menu extends JFrame {
 	public Settings_menu() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 700, 419);
+		setBounds(100, 100, 715, 437);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
 		two = new JCheckBox("");//200 seconds
-		two.setBounds(47, 124, 193, 23);
+		two.setBounds(47, 124, 23, 23);
 		contentPane.add(two);
 		ActionListener actionListener = new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
@@ -66,7 +66,7 @@ public class Settings_menu extends JFrame {
 		two.addActionListener(actionListener);
 
 		four = new JCheckBox("");//400 seconds
-		four.setBounds(47, 156, 209, 23);
+		four.setBounds(47, 156, 23, 23);
 		contentPane.add(four);
 		ActionListener actionListener1 = new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
@@ -77,7 +77,7 @@ public class Settings_menu extends JFrame {
 		four.addActionListener(actionListener1);
 
 		six = new JCheckBox("");//600 seconds
-		six.setBounds(47, 190, 193, 23);
+		six.setBounds(47, 190, 23, 23);
 		contentPane.add(six);
 		ActionListener actionListener2 = new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
@@ -118,7 +118,7 @@ public class Settings_menu extends JFrame {
 		btnMainmenu.setBorderPainted(false);
 
 		easy = new JCheckBox("");
-		easy.setBounds(47, 290, 128, 23);
+		easy.setBounds(47, 290, 23, 23);
 		contentPane.add(easy);
 		ActionListener actionListener4 = new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
@@ -128,7 +128,7 @@ public class Settings_menu extends JFrame {
 		easy.addActionListener(actionListener4);
 
 		hard = new JCheckBox("");
-		hard.setBounds(47, 325, 128, 23);
+		hard.setBounds(47, 325, 23, 23);
 		contentPane.add(hard);
 		ActionListener actionListener5 = new ActionListener() {
 			public void actionPerformed(ActionEvent actionEvent) {
